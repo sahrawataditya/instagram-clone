@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const { MONGO_URL } = require('./db/keys')
+// const { MONGO_URL } = require('./db/keys')
 require('./models/User')
 require('./models/posts')
 const connect = require('./db/connection')

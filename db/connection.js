@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
-const {MONGO_URL}=require('./keys')
-
+// const {MONGO_URL}=require('./keys')
+const config = require("../config/default")
+const MONGO_URL = config.mongodb
 const connect = async () => {
     try {
         await mongoose.connect(MONGO_URL,{

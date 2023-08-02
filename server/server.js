@@ -1,4 +1,5 @@
-const Port = 5000;
+const config = require('../config/default')
+const Port = config.port
 const startServer  = async(app)=>{
 try {
     app.listen(Port,()=>{
